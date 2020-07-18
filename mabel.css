@@ -1,4 +1,4 @@
-@charset "utf-8";
+﻿@charset "utf-8";
 /* CSS Document */
 
 /*RESET*/
@@ -26,7 +26,7 @@ nav, ul{list-style: none;}
 body {font-family:'outro';
 background-image:url(bg.png);}
 
-/*CABEÇALHO*/
+/*HEADER*/
 header#cabecalho {
     width:100%;
     height:60px;
@@ -46,7 +46,6 @@ width: 120px;
 z-index: 200;
 margin-left: 30px;
 }
-
 /*REDES SOCIAIS*/
 section#sociais ul {
 	list-style-type: none;
@@ -69,12 +68,10 @@ margin: auto;
 margin-top: 10px;
 text-align: center;
 }
-
 #nav {width:100%;
 margin:auto;
 display: block;
 }
-
 #nav span {	color:#ef5f26;
 font-size:18px;
 font-family:Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, sans-serif;
@@ -102,47 +99,6 @@ color:#00AEFF;
 }
 #nav ul li a:active {
     color:#00AEFF;
-}
-/*FOOOOOOTER*/
-footer {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        background-color: #242525;
-}
-.rodape {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-.rodape .grid { 
-    width: 100%;
-    display: flex;
-    margin-bottom: 50px;
-}
-.rodape .grid li {
-    padding: 0 50px;
-    text-align: center;
-}
-.rodape .grid li i {
-    color: #ef5f26;
-    font-size: 30px;
-    margin-bottom: 10px;
-    margin-top: 30px;
-}
-.rodape .grid li p {
-    text-align: center;
-    color: #fff;
-    font-size: 0.9rem;
-}
-.copy {
-    height: 80px;
-}
-.copy p {
-    font-size:12px;
-    color:#ddd;
-    text-align:center;
-    line-height:35px;
 }
 /*BANNER HOME*/
 .bannerhome {
@@ -202,6 +158,83 @@ footer {
     padding: 30px 50px;
     text-transform: uppercase;
 }
+/*EMPRESA ONEPAGE*/
+.empresa {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 200px 50px;
+	background-color: #242525;
+}
+.empresa .grid { 
+    width: 100%;
+    display: flex;
+}
+.empresa .grid li {
+    padding: 0 30px;
+    text-align: center;
+    margin-bottom: 100px;
+}
+.empresa .grid li i {
+    color: #ef5f26;
+    font-size: 50px;
+    margin-bottom: 30px;
+}
+.empresa .grid li h4 {
+    font-style: 1.5rem;
+    color: #00AEFF;
+    letter-spacing: 2px;
+    margin-bottom: 30px;
+}
+.empresa .grid li p {
+	color: #fff;
+	text-align: center;
+}
+/*SERVIÇOS ONEPAGE*/
+.serviceshome {background-image:url(nice_snow.png);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+	padding: 200px 50px;
+}
+.serviceshome .grid { 
+    width: 100%;
+    display: flex;
+}
+.serviceshome .grid li {
+    padding: 0 30px;
+    text-align: center;
+    margin-bottom: 100px;
+}
+.serviceshome .grid li i {
+    color: #00aeff;
+    font-size: 50px;
+    margin-bottom: 30px;
+}
+.serviceshome .grid li h4 {
+    font-style: 1.5rem;
+    color: #ef5f26;
+    letter-spacing: 2px;
+    margin-bottom: 30px;
+}
+.serviceshome .grid li p {
+	color: #242525;
+	text-align: center;
+}
+/*SERVIÇOS ONEPAGE*/
+.contato .grid { background-image:url(bg.png);
+    display: flex;
+    flex-direction: row;
+}
+.contato .grid li {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+.contato .grid li iframe#maps {width:100%;
+    height:100%;
+    border: none;
+}
 /*PÁGINA CONTATO*/
 .contato form.form {
     padding: 100px 150px;
@@ -250,81 +283,44 @@ textarea:focus, input:focus, select:focus {
     border: 0 none;
     outline: 0;
 }
-/*EMPRESA ONEPAGE*/
-.empresa {
+/*FOOOOOOTER*/
+footer {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 200px 50px;
-	background-color: #242525;
+    background-color: #242525;
 }
-.empresa .grid { 
-    width: 100%;
-    display: flex;
+.rodape {
+display: flex;
+flex-direction: column;
+align-items: center;
 }
-.empresa .grid li {
-    padding: 0 30px;
-    text-align: center;
-    margin-bottom: 35px;
+.rodape .grid { 
+width: 100%;
+display: flex;
+margin-bottom: 50px;
 }
-.empresa .grid li i {
-    color: #ef5f26;
-    font-size: 50px;
-    margin-bottom: 30px;
+.rodape .grid li {
+padding: 0 50px;
+text-align: center;
 }
-.empresa .grid li h4 {
-    font-style: 1.5rem;
-    color: #00AEFF;
-    letter-spacing: 2px;
-    margin-bottom: 30px;
+.rodape .grid li i {
+color: #ef5f26;
+font-size: 30px;
+margin-bottom: 10px;
+margin-top: 30px;
 }
-.empresa .grid li p {
-	color: #fff;
-	text-align: center;
+.rodape .grid li p {
+text-align: center;
+color: #fff;
+font-size: 0.9rem;
 }
-/*SERVIÇOS ONEPAGE*/
-.serviceshome {background-image:url(nice_snow.png);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-	padding: 200px 50px;
+.copy {
+height: 80px;
 }
-.serviceshome .grid { 
-    width: 100%;
-    display: flex;
-}
-.serviceshome .grid li {
-    padding: 0 30px;
-    text-align: center;
-    margin-bottom: 35px;
-}
-.serviceshome .grid li i {
-    color: #00aeff;
-    font-size: 50px;
-    margin-bottom: 30px;
-}
-.serviceshome .grid li h4 {
-    font-style: 1.5rem;
-    color: #ef5f26;
-    letter-spacing: 2px;
-    margin-bottom: 30px;
-}
-.serviceshome .grid li p {
-	color: #242525;
-	text-align: center;
-}
-/*SERVIÇOS ONEPAGE*/
-
-.contato .grid { background-image:url(bg.png);
-    display: flex;
-    flex-direction: row;
-}
-.contato .grid li {
-    width: 50%;
-    display: flex;
-    flex-direction: column;
-}
-.contato .grid li iframe#maps {width:100%;
-    height:100%;
-    border: none;
+.copy p {
+font-size:12px;
+color:#ddd;
+text-align:center;
+line-height:35px;
 }

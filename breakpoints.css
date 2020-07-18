@@ -32,19 +32,23 @@
 	}		
 }
 @media (max-width: 700px) {
-    /*EMPRESA*/
-    section.empresa h1 {
+/*BANNER EMPRESA*/
+    .bannerempresa h1 {
         font-size: 2.5rem;
+		padding: 0 20px;
     }
-    section.empresa h3 {
+    .bannerempresa h3 {
         font-size: 1.5rem;
+		padding: 0 20px;
 	}
-	/*SERVICES*/
-	section.serviceshome h1 {
+/*BANNER HOME*/
+	.bannerhome h1 {
 		font-size: 2.5rem;
+		padding: 0 20px;
 	}
-	section.serviceshome h3 {
+	.bannerhome h3 {
 		font-size: 1.5rem;
+		padding: 0 20px;
 }
 	/*HEADER*/
     header {
@@ -96,6 +100,14 @@
 	header section#sociais ul {
 		margin-bottom: 20px;
 		margin-left: 10px;
+	}
+	/*EMPRESA ONEPAGE*/
+	.empresa {
+    padding: 150px 50px 100px 50px;
+	}
+	/*SERVIÇOS ONEPAGE*/
+	.serviceshome {
+	padding: 150px 50px 100px 50px;
 	}
 	/*CONTATO*/
 	.contato form.form {
