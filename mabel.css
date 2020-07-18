@@ -24,7 +24,7 @@ nav, ul{list-style: none;}
 /*FIM FONTES*/
 
 body {font-family:'outro';
-background-image:url(bg.png);}
+background-image:url(agsquare.png);}
 
 /*CABEÇALHO*/
 header#cabecalho {
@@ -104,101 +104,46 @@ color:#00AEFF;
     color:#00AEFF;
 }
 /*FOOOOOOTER*/
-footer#rodape {width:100%;
-clear:both;
-float:inherit;
-margin-top:0px;
+footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: #242525;
 }
-
-footer i {
-	float: left;
-	color: #ef5f26;
-	font-size: 2.5em;
-	margin-top: 15px;
+.rodape {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
-div#copy {height:80px;
-background-color:#252424;}
-
-div#footer { height:100px;
-background-color:#252424;
-margin-bottom:0px;}
-
-div#copy p {
-font-size:12px;
-color:#ddd;
-text-align:center;
-line-height:35px;}
-
-div#ref {width:900px;
-height:100px;
-margin: auto;}
-
-section#tel {float:right;
-width:150px;;
-height:70px;
-margin-top:10px;}
-
-
-section#tel p {float:right;
-left:70px;
-bottom:60px;
-font-size:15px;
-color:#DDD;
-margin-top:16px;
-line-height:20px;}
-
-section#local {
-float:left;
-width:270px;
-height:75px;
-margin-top:10px;}
-
-
-section#local p {float:right;
-font-size:14px;
-color:#CCC;
-line-height:20px;
-margin-right:2px;
-margin-top:20px;}
-
-
-section#local a {text-decoration:none;
-color:#111;
-padding:3px;
-font-size:16px;
-background-color:#ccc;
-position:absolute;
-margin-left:180px;
-margin-top:40px;
-border-radius:3px;
-font-weight:bold;}
-
-section#mail {float:right;
-width:215px;;
-height:70px;
-margin-top:10px;
-margin-right:30px;}
-
-section#mail p {float:right;
-bottom:60px;
-font-size:14px;
-color:#CCC;
-margin-top:30px;}
-
-section#hour {float:left;
-width:180px;;
-height:70px;
-margin-top:10px;
-margin-left:25px;}
-
-
-section#hour p {float:right;
-left:70px;
-bottom:60px;
-font-size:15px;
-color:#CCC;
-margin-top:30px;}
-
+.rodape .grid { 
+    width: 100%;
+    display: flex;
+    margin-bottom: 50px;
+}
+.rodape .grid li {
+    padding: 0 50px;
+    text-align: center;
+}
+.rodape .grid li i {
+    color: #ef5f26;
+    font-size: 30px;
+    margin-bottom: 10px;
+    margin-top: 30px;
+}
+.rodape .grid li p {
+    text-align: center;
+    color: #fff;
+    font-size: 0.9rem;
+}
+.copy {
+    height: 80px;
+}
+.copy p {
+    font-size:12px;
+    color:#ddd;
+    text-align:center;
+    line-height:35px;
+}
 /*BANNER HOME*/
 .bannerhome {
     background: url(home.jpg);

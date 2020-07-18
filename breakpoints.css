@@ -12,6 +12,9 @@
 	.contato .grid {
 		flex-direction: column;
 	}
+	.rodape .grid {
+		flex-direction: column;
+	}
 	/*HEADER*/
 	header#cabecalho {
 		position: inherit;
