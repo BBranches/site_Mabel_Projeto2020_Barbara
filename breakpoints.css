@@ -1,20 +1,7 @@
 @charset "utf-8";
 /* CSS Document */
+
 @media (max-width: 850px) {
-	body {overflow-x: hidden;}
-    /*SOBRE*/
-    .empresa .grid {
-        flex-direction: column;
-	}
-	.serviceshome .grid {
-		flex-direction: column;
-	}
-	.contato .grid {
-		flex-direction: column;
-	}
-	.rodape .grid {
-		flex-direction: column;
-	}
 	/*HEADER*/
 	header#cabecalho {
 		position: inherit;
@@ -27,69 +14,76 @@
 		margin-bottom: 10px;
 	}
 	/*LOGO*/
-	header img#logo {
-		margin-left: 0px;
-	}		
+	header img#logo {margin-left: 0px;}		
+
+	/*BODY*/
+	body {overflow-x: hidden;}
+
+    /*SOBRE*/
+	.empresa .grid {flex-direction: column;}
+	
+	.serviceshome .grid {flex-direction: column;}
+
+	.contato .grid {flex-direction: column;}
+
+	.rodape .grid {flex-direction: column;}
 }
+
 @media (max-width: 700px) {
-/*BANNER EMPRESA*/
-    .bannerempresa h1 {
-        font-size: 2.5rem;
+	/*HEADER*/
+	header {flex-direction: column;}
+	/*BODY*/
+	body {overflow-x: hidden;}
+	/*BANNER EMPRESA*/
+	.bannerempresa h1 {
+		font-size: 2.5rem;
 		padding: 0 20px;
-    }
-    .bannerempresa h3 {
-        font-size: 1.5rem;
+		}
+	.bannerempresa h3 {
+		font-size: 1.5rem;
 		padding: 0 20px;
-	}
-/*BANNER HOME*/
+		}
+	/*BANNER HOME*/
 	.bannerhome h1 {
 		font-size: 2.5rem;
 		padding: 0 20px;
-	}
+		}
 	.bannerhome h3 {
 		font-size: 1.5rem;
 		padding: 0 20px;
+	}
 }
-	/*HEADER*/
-    header {
-        flex-direction: column;
-    }
-}
+
 @media (max-width: 1200px) {
-	/*CONTATO*/
+	/*UL CONTATO*/
 	.contato .grid li {
 		width: 100%;
 		display: flex;
+	}
 }
-}
+
 @media (min-width: 1200px) {
-	/*CONTATO*/
+	/*BOTAO ENVIAR CONTATO*/
 	.contato input#enviar {
 		margin-right:40px ;
 	}
 }
-@media screen and (max-width: 600px) {
-	
-	body {overflow-x: hidden;}
 
-	section.container{
-		width:600px;
-	}
+@media screen and (max-width: 600px) {
 	/*HEADER*/
 	header#cabecalho {
 		position: inherit;
 		height:400px;
 	}
 	/*MENU*/
-	#nav {
-		margin-top: -3px;
-	}
-	#nav ul li {display:block;
+	#nav {margin-top: -3px;}
+
+	#nav ul li {
+		display:block;
 		text-align:center;
 	}
-	#nav a {
-		font-size:16px;
-	}
+	#nav a {font-size:16px;}
+
 	/*LOGO*/
 	header img#logo {
 		margin-top: 10px;
@@ -101,25 +95,24 @@
 		margin-bottom: 20px;
 		margin-left: 10px;
 	}
+	/*BODY*/
+	body {overflow-x: hidden;}
+
 	/*EMPRESA ONEPAGE*/
-	.empresa {
-    padding: 150px 50px 100px 50px;
-	}
+	.empresa {padding: 150px 50px 100px 50px;}
+
 	/*SERVIÇOS ONEPAGE*/
-	.serviceshome {
-	padding: 150px 50px 100px 50px;
-	}
-	/*CONTATO*/
+	.serviceshome {padding: 150px 50px 100px 50px;}
+
+	/*FORMULARIO CONTATO ONEPAGE*/
 	.contato form.form {
 		display: flex;
 		padding: 100px 30px;
 	}
-	.contato input {
-		width: 300px; 
-	}
-	.contato textarea.textarea {
-		width: 300px;
-	}
+	.contato input {width: 300px;}
+
+	.contato textarea.textarea {width: 300px;}
+
 	.contato input#enviar {
 		margin-right: 100px;
 		margin-left: 0px;

@@ -9,10 +9,9 @@
 a {
 	text-decoration: none; 
 	cursor: pointer; 
-	opacity: 0.9;}
-	
+    opacity: 0.9;
+}
 a:hover {opacity: 1;}
-
 nav, ul{list-style: none;}
 /*FIM RESET*/
 
@@ -23,8 +22,8 @@ nav, ul{list-style: none;}
 @font-face {font-family: 'outro'; src:url(ColabReg.otf) format('truetype');}
 /*FIM FONTES*/
 
-body {font-family:'outro';
-background-image:url(bg.png);}
+/*BODY*/
+body {font-family:'outro';}
 
 /*HEADER*/
 header#cabecalho {
@@ -42,9 +41,9 @@ header nav ul {
 }
 /*LOGO*/
 header img#logo {
-width: 120px;
-z-index: 200;
-margin-left: 30px;
+    width: 120px;
+    z-index: 200;
+    margin-left: 30px;
 }
 /*REDES SOCIAIS*/
 section#sociais ul {
@@ -59,47 +58,48 @@ section#sociais ul li a {
 }
 /*MENU PRINCIPAL*/
 #nav {
-width:100%;
-background-color:#252424;
-top:0px;
-height:40px;
-display: block;
-margin: auto;
-margin-top: 10px;
-text-align: center;
+    width:100%;
+    background-color:#252424;
+    top:0px;
+    height:40px;
+    display: block;
+    margin: auto;
+    margin-top: 10px;
+    text-align: center;
 }
-#nav {width:100%;
-margin:auto;
-display: block;
+#nav {
+    width:100%;
+    margin:auto;
+    display: block;
 }
-#nav span {	color:#ef5f26;
-font-size:18px;
-font-family:Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, sans-serif;
+#nav span {	
+    color:#ef5f26;
+    font-size:18px;
+    font-family:Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, sans-serif;
 }
 #nav ul {
-font-family:'menu';
-display:inline-block;
+    font-family:'menu';
+    display:inline-block;
 }
 #nav li {
 	display:inline-block;
     padding:8px;
 }
-#nav a {color:#fff;
-text-decoration:none;
-font-size:13px;
-text-transform:uppercase;
-padding:3px;
+#nav a {
+    color:#fff;
+    text-decoration:none;
+    font-size:13px;
+    text-transform:uppercase;
+    padding:3px;
 }
 #nav a:hover {
-padding:3px;
-color:#00AEFF;
-}
-#nav a.active {
-color:#00AEFF;
-}
-#nav ul li a:active {
+    padding:3px;
     color:#00AEFF;
 }
+#nav a.active {color:#00AEFF;}
+
+#nav ul li a:active {color:#00AEFF;}
+
 /*BANNER HOME*/
 .bannerhome {
     background: url(home.jpg);
@@ -115,7 +115,7 @@ color:#00AEFF;
 .bannerhome h1 { 
     font-size: 3.2rem;
     margin-bottom: 20px;
-	margin-top: 200px;
+	margin-top: 100px;
 	color: #ef5f26;
 }
 .bannerhome h3 { 
@@ -128,6 +128,19 @@ color:#00AEFF;
 	color: #fff;
     padding: 20px 50px;
     text-transform: uppercase;
+}
+/*BOTAO VOLTAR AO TOPO*/
+a.top {
+    padding:10px;
+    position:fixed;
+    top: 90%;
+    right:30px;
+    display:none;
+    font-size: 30px;
+    color: #ef5f26;
+}
+a.top:hover {
+    color: #00aeff;
 }
 /*BANNER EMPRESA*/
 .bannerempresa {
@@ -144,7 +157,7 @@ color:#00AEFF;
 .bannerempresa h1 { 
     font-size: 3.2rem;
     margin-bottom: 20px;
-    margin-top: 200px;
+    margin-top: 100px;
 	color: #00AEFF;
 }
 .bannerempresa h3 { 
@@ -155,8 +168,9 @@ color:#00AEFF;
     background-color: #000;
     border-radius: 4px;
     color: #00AEFF;
-    padding: 30px 50px;
+    padding: 20px;
     text-transform: uppercase;
+    border: 1px solid #00aeff;
 }
 /*EMPRESA ONEPAGE*/
 .empresa {
@@ -191,7 +205,8 @@ color:#00AEFF;
 	text-align: center;
 }
 /*SERVIÇOS ONEPAGE*/
-.serviceshome {background-image:url(nice_snow.png);
+.serviceshome {
+    background-image:url(nice_snow.png);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -221,8 +236,9 @@ color:#00AEFF;
 	color: #242525;
 	text-align: center;
 }
-/*SERVIÇOS ONEPAGE*/
-.contato .grid { background-image:url(bg.png);
+/*CONTATO ONEPAGE*/
+.contato .grid { 
+    background-image:url(bg.png);
     display: flex;
     flex-direction: row;
 }
@@ -231,19 +247,21 @@ color:#00AEFF;
     display: flex;
     flex-direction: column;
 }
-.contato .grid li iframe#maps {width:100%;
+/*CONTATO ONEPAGE MAPA*/
+.contato .grid li iframe#maps {
+    width:100%;
     height:100%;
     border: none;
 }
-/*PÁGINA CONTATO*/
+/*CONTATO ONEPAGE FORMULARIO*/
 .contato form.form {
     padding: 100px 150px;
 }
 .contato form p{color:#ef5f26;
-font-size:20px;
-margin-bottom: 20px;
-font-weight:bold;}
-
+    font-size:20px;
+    margin-bottom: 20px;
+    font-weight:bold;
+}
 .contato input {
     border:none;
     height:50px;
@@ -283,7 +301,7 @@ textarea:focus, input:focus, select:focus {
     border: 0 none;
     outline: 0;
 }
-/*FOOOOOOTER*/
+/*FOOTER*/
 footer {
     display: flex;
     flex-direction: column;
@@ -291,36 +309,36 @@ footer {
     background-color: #242525;
 }
 .rodape {
-display: flex;
-flex-direction: column;
-align-items: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 .rodape .grid { 
-width: 100%;
-display: flex;
-margin-bottom: 50px;
+    width: 100%;
+    display: flex;
+    margin-bottom: 50px;
 }
 .rodape .grid li {
-padding: 0 50px;
-text-align: center;
+    padding: 0 50px;
+    text-align: center;
 }
 .rodape .grid li i {
-color: #ef5f26;
-font-size: 30px;
-margin-bottom: 10px;
-margin-top: 30px;
+    color: #ef5f26;
+    font-size: 30px;
+    margin-bottom: 10px;
+    margin-top: 30px;
 }
 .rodape .grid li p {
-text-align: center;
-color: #fff;
-font-size: 0.9rem;
+    text-align: center;
+    color: #fff;
+    font-size: 0.9rem;
 }
 .copy {
-height: 80px;
+    height: 80px;
 }
 .copy p {
-font-size:12px;
-color:#ddd;
-text-align:center;
-line-height:35px;
+    font-size:12px;
+    color:#ddd;
+    text-align:center;
+    line-height:35px;
 }
