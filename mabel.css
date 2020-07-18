@@ -120,7 +120,7 @@ section#sociais ul li a {
 }
 .bannerhome h3 { 
     font-size: 2rem;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
 }
 .bannerhome .btn {
     background-color: #ef5f26;
@@ -128,6 +128,7 @@ section#sociais ul li a {
 	color: #fff;
     padding: 20px 50px;
     text-transform: uppercase;
+    margin-bottom: 50px;
 }
 /*BOTAO VOLTAR AO TOPO*/
 a.top {
@@ -162,7 +163,7 @@ a.top:hover {
 }
 .bannerempresa h3 { 
     font-size: 2rem;
-    margin-bottom: 25px;
+    margin-bottom: 30px;
 }
 .bannerempresa .btn {
     background-color: #000;
@@ -171,6 +172,7 @@ a.top:hover {
     padding: 20px;
     text-transform: uppercase;
     border: 1px solid #00aeff;
+    margin-bottom: 50px;
 }
 /*EMPRESA ONEPAGE*/
 .empresa {
