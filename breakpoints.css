@@ -1,6 +1,7 @@
 @charset "utf-8";
 /* CSS Document */
 @media (max-width: 850px) {
+	body {overflow-x: hidden;}
     /*SOBRE*/
     .empresa .grid {
         flex-direction: column;
@@ -28,14 +29,14 @@
 	}		
 }
 @media (max-width: 700px) {
-    /*HERO*/
+    /*EMPRESA*/
     section.empresa h1 {
         font-size: 2.5rem;
     }
     section.empresa h3 {
         font-size: 1.5rem;
 	}
-	/*HERO*/
+	/*SERVICES*/
 	section.serviceshome h1 {
 		font-size: 2.5rem;
 	}
@@ -94,16 +95,12 @@ header section#sociais ul {
 	margin-bottom: 20px;
 	margin-left: 10px;
 }
-/*BANNER HOME*/
-.heros {
-	background-position:right;
-}
 /*FOOTER*/
  div#footer { 
 	height:180px;
 }
 div#ref {
-	width:500px;
+	width:600px;
 	height:180px;
 }
 section#tel {
