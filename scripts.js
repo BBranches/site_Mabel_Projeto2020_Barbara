@@ -37,5 +37,5 @@ $(document).ready(function(){
 //ALERT CONTATO
 function enviou(){
     alert ("Sua mensagem foi enviada. Retornaremos o Contato.\nObrigado!");
-    window.stop();
+    window.location.href = "https://mabelprojects.github.io/BarbaraRamos-MabelAdministradora-2020/";
 }
