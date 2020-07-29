@@ -1,10 +1,10 @@
 //TEL FORMAT
-$("#telefone").mask("(00) 0000-00000");
+$("#telefone").mask("(00) 00000-0000");
 
 // ACTIVE MENU
-    $('#nav a').click(function () {
-    $('#nav a.active').removeClass('active');
-    $(this).addClass('active');
+$('#nav a').click(function () {
+$('#nav a.active').removeClass('active');
+$(this).addClass('active');
 });
 $(window).scroll(function () {
     var href = $(this).scrollTop();
@@ -15,10 +15,10 @@ $(window).scroll(function () {
         }
     });
 });
-//LINK MENU ATIVO HOME
+//ACTIVE HOME
 $('#home').addClass('active');
 
-//BOTAO VOLTAR AO TOPO
+//BOTAO TOP
 $(document).ready(function(){
     $(window).scroll(function(){
         if ($(this).scrollTop() > 100) {
@@ -33,3 +33,8 @@ $(document).ready(function(){
         return false;
     });
 });
+
+//ALERT CONTATO
+function enviou(){
+    alert ("Sua mensagem foi enviada. Retornaremos o Contato.\nObrigado!");
+}
