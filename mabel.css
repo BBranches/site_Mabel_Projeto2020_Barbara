@@ -65,19 +65,17 @@ header nav {
 header nav ul {
     display: flex;
 }
-#nav ul li {
-    padding-right: 15px;
-}
 #nav a {
     color:#fff;
     text-decoration:none;
     font-size:15px;
     text-transform:uppercase;
-    padding:3px;
+    padding: 10px;
 }
 #nav a:hover {
     color:#00AEFF;
 }
+/*JS*/
 #nav a.active {color:#00AEFF;}
 #nav ul li a:active {color:#00AEFF;}
 /*FIM HEADER*/
@@ -251,7 +249,7 @@ a.top {
     border-radius: 4px;
     background-clip: content-box;
     background-size: cover;
-    background-position: center;
+    background-position: top;
     cursor: pointer;
 }
 .imagens .imgs li.menor {
@@ -260,66 +258,6 @@ a.top {
 .imagens .imgs li.maior {
     flex-basis: 55%;
 }
-
-/*IMOVEIS*/
-.imovel1 {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 120px;
-}
-.imovel1 h1 {
-    font-size: 3rem;
-    margin: 80px 0;
-    color: #f7af0f;
-    text-align: center;
-    text-transform: capitalize;
-}
-.imovel1 ul.album {
-    list-style: none;
-}
-.imovel1 ul.album li {
-    float: left;
-    width: 250px;
-    height: 150px;
-    margin: 10px;
-    border: 5px solid #fff;
-    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4);
-    background-position: 50% 50%;
-    background-size: 400px 265px;
-    background-repeat: no-repeat;
-} 
-.imovel1 ul.album li span {
-    opacity: 0;
-    color: #fff;
-    text-shadow: 1px 1px 1px #000;
-    background-color: rgba(0, 0, 0, 0.5);
-    line-height: 250px;
-    font-size: 1.2rem;
-    padding: 5px;
-}
-.imovel1 ul.album li:hover span {
-    opacity: 1;
-}
-.imovel1 ul.album li.img1 {
-    background-image: url(img/sala.jpg);
-}
-.imovel1 ul.album li.img2 {
-    background-image: url(img/quarto.jpg) 
-}
-.imovel1 ul.album li.img3 {
-    background-image: url(img/cozinha.jpg);
-}
-.imovel1 ul.album li.img4 {
-    background-image: url(img/banheiro2.jpg) 
-}
-.imovel1 ul.album li:hover {
-    background-position: 0px 0px;
-    background-size: 250px 150px;
-    transform: scale(1.5);
-    transition: all 0.4s ease-in;
-}
-
 /*CONTATO MAPA*/
 .contato .grid li iframe#maps {
     width:100%;
@@ -334,7 +272,7 @@ a.top {
     flex-direction: column;
     width: 70%;
     max-width: 800px;
-    align-items: center;
+    align-items: baseline;
     padding: 100px;
 }
 .contato .grid { 
@@ -346,19 +284,18 @@ a.top {
     width: 50%;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: baseline;
 }
 .contato form p{
     color:#00aeff;
     font-size:20px;
-    padding: 30px;
+    padding: 20px;
     font-weight:bold;
-    align-self: baseline;
 }
 .contato form input {
     border-radius: 4px;
     text-align: left;
-    width: 100%;
+    width: 90%;
     font-size: 1.2rem;
     border:none;
     padding: 20px;
@@ -369,7 +306,6 @@ a.top {
 }
 .contato form input.tel {
     width: 50%;
-    align-self: baseline;
     margin-bottom: 25px;
 }
 .contato form textarea {
@@ -378,7 +314,7 @@ a.top {
     border-radius: 4px;
     margin-bottom: 25px;
     text-align: left;
-    width: 100%;
+    width: 90%;
     color:#eee;
     font-size: 1.5rem;
     height: 150px;
@@ -391,11 +327,12 @@ a.top {
     text-transform: uppercase;
     border: none;
     border-radius: 4px;
-    width: 30%;
+    width: 50%;
     text-align: center;
     align-self: flex-end;
     margin: 15px 0;
     font-size:18px;
+    align-self: center;
 }
 textarea:focus, input:focus, select:focus {
     box-shadow: 0 0 0 0;

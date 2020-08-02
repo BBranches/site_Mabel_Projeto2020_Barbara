@@ -1,13 +1,6 @@
 @charset "utf-8";
 /* CSS Document */
 
-@media (max-width: 1200px) {
-	/*UL CONTATO*/
-	.contato .grid li {
-		width: 100%;
-		display: flex;
-	}
-}
 @media (max-width: 850px) {
 	/*HEADER*/
 	header#cabecalho {
@@ -66,10 +59,9 @@
 
 	/*CONTATO ONEPAGE*/
 	.contato .grid {flex-direction: column;}
-	
-	.contato form {padding: 30px;}
+	.contato .grid li {width: 100%;}
 	.contato ul.grid li.map {height: 350px;}
-
+	
 	/*FOOTER ONEPAGE*/
 	.rodape .grid {flex-direction: column;}
 }
