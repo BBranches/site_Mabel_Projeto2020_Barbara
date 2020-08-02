@@ -6,12 +6,12 @@
 	margin: 0;
 	padding: 0;
 }
-a {
+a, button {
 	text-decoration: none; 
 	cursor: pointer; 
     opacity: 0.9;
 }
-a:hover {opacity: 1;}
+a:hover, button:hover {opacity: 1;}
 nav, ul{list-style: none;}
 /*FIM RESET*/
 
@@ -23,13 +23,14 @@ nav, ul{list-style: none;}
 /*FIM FONTES*/
 
 /*BODY*/
-body {font-family:'outro';}
+body {font-family:'outro';
+    overflow-x: hidden;
+    background-image:url(skewed_print.png);}
 
 /*HEADER*/
 header#cabecalho {
     width:100%;
-    height:60px;
-    background-color:#252424;
+    background-image:url(skewed_print.png);
     position: fixed;
     z-index: 200;
     display: flex;
@@ -40,26 +41,25 @@ header nav ul {
     display: flex;
 }
 /*LOGO*/
-header img#logo {
+header a.logo img#logo {
     width: 120px;
     z-index: 200;
-    margin-left: 30px;
+    margin: 15px;
 }
 /*REDES SOCIAIS*/
 section#sociais ul {
 	list-style-type: none;
     display: flex;	
-    margin-right: 30px;
+    margin: 15px;
 }
 section#sociais ul li a {
 	font-size: 1.5em;
 	color:#ef5f26;
-    padding: 5px;
+    padding: 8px;
 }
 /*MENU PRINCIPAL*/
 #nav {
     width:100%;
-    background-color:#252424;
     top:0px;
     height:40px;
     display: block;
@@ -72,11 +72,6 @@ section#sociais ul li a {
     margin:auto;
     display: block;
 }
-#nav span {	
-    color:#ef5f26;
-    font-size:18px;
-    font-family:Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, sans-serif;
-}
 #nav ul {
     font-family:'menu';
     display:inline-block;
@@ -88,7 +83,7 @@ section#sociais ul li a {
 #nav a {
     color:#fff;
     text-decoration:none;
-    font-size:13px;
+    font-size:15px;
     text-transform:uppercase;
     padding:3px;
 }
@@ -97,16 +92,17 @@ section#sociais ul li a {
     color:#00AEFF;
 }
 #nav a.active {color:#00AEFF;}
-
 #nav ul li a:active {color:#00AEFF;}
+/*FIM HEADER*/
 
 /*BANNER HOME*/
 .bannerhome {
     background: url(home.jpg);
 	background-size: cover;
-    min-height: 100vh;
+    min-height: 115vh;
     color: #fff;
     display: flex;
+    background-position: bottom;
     justify-content: center;
     align-items: center;
     flex-direction: column;
@@ -130,7 +126,9 @@ section#sociais ul li a {
     text-transform: uppercase;
     margin-bottom: 50px;
 }
+
 /*BOTAO VOLTAR AO TOPO*/
+section.top {position: absolute;}
 a.top {
     padding:10px;
     position:fixed;
@@ -138,11 +136,9 @@ a.top {
     right:30px;
     display:none;
     font-size: 30px;
-    color: #ef5f26;
-}
-a.top:hover {
     color: #00aeff;
 }
+
 /*BANNER EMPRESA*/
 .bannerempresa {
     background: url(house.jpg);
@@ -174,13 +170,13 @@ a.top:hover {
     border: 1px solid #00aeff;
     margin-bottom: 50px;
 }
-/*EMPRESA ONEPAGE*/
+
+/*EMPRESA*/
 .empresa {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 200px 50px;
-	background-color: #242525;
+    padding: 150px 50px;
 }
 .empresa .grid { 
     width: 100%;
@@ -199,20 +195,21 @@ a.top:hover {
 .empresa .grid li h4 {
     font-style: 1.5rem;
     color: #00AEFF;
-    letter-spacing: 2px;
     margin-bottom: 30px;
+    text-transform: uppercase;
 }
 .empresa .grid li p {
 	color: #fff;
 	text-align: center;
 }
-/*SERVIÇOS ONEPAGE*/
+
+/*SERVIÇOS*/
 .serviceshome {
-    background-image:url(nice_snow.png);
+    background-image:url(subtle_white_feathers.png);
     display: flex;
     flex-direction: column;
     align-items: center;
-	padding: 200px 50px;
+	padding: 150px 50px;
 }
 .serviceshome .grid { 
     width: 100%;
@@ -231,14 +228,128 @@ a.top:hover {
 .serviceshome .grid li h4 {
     font-style: 1.5rem;
     color: #ef5f26;
-    letter-spacing: 2px;
     margin-bottom: 30px;
+    text-transform: uppercase;
 }
 .serviceshome .grid li p {
 	color: #242525;
 	text-align: center;
 }
-/*CONTATO ONEPAGE*/
+
+/*IMAGENS*/
+.imagens {background-image:url(skewed_print.png);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 120px;
+}
+.imagens h1 {
+    font-size: 3rem;
+    margin-bottom: 50px;
+    color: #ef5f26;
+    text-align: center;
+}
+.imagens h1 span {
+    color: #00aeff;
+    font-size: 3.5rem;
+}
+.imagens .imgs {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.imagens .imgs li {
+    height: 350px;
+    padding:1%;
+    border-radius: 4px;
+    background-clip: content-box;
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+}
+.imagens .imgs li.menor {
+    flex-basis: 40%;
+}
+.imagens .imgs li.maior {
+    flex-basis: 55%;
+}
+
+/*IMOVEIS*/
+.imovel1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 120px;
+}
+.imovel1 h1 {
+    font-size: 3rem;
+    margin: 80px 0;
+    color: #f7af0f;
+    text-align: center;
+    text-transform: capitalize;
+}
+.imovel1 ul.album {
+    list-style: none;
+}
+.imovel1 ul.album li {
+    float: left;
+    width: 250px;
+    height: 150px;
+    margin: 10px;
+    border: 5px solid #fff;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4);
+    background-position: 50% 50%;
+    background-size: 400px 265px;
+    background-repeat: no-repeat;
+} 
+.imovel1 ul.album li span {
+    opacity: 0;
+    color: #fff;
+    text-shadow: 1px 1px 1px #000;
+    background-color: rgba(0, 0, 0, 0.5);
+    line-height: 250px;
+    font-size: 1.2rem;
+    padding: 5px;
+}
+.imovel1 ul.album li:hover span {
+    opacity: 1;
+}
+.imovel1 ul.album li.img1 {
+    background-image: url(img/sala.jpg);
+}
+.imovel1 ul.album li.img2 {
+    background-image: url(img/quarto.jpg) 
+}
+.imovel1 ul.album li.img3 {
+    background-image: url(img/cozinha.jpg);
+}
+.imovel1 ul.album li.img4 {
+    background-image: url(img/banheiro2.jpg) 
+}
+.imovel1 ul.album li:hover {
+    background-position: 0px 0px;
+    background-size: 250px 150px;
+    transform: scale(1.5);
+    transition: all 0.4s ease-in;
+}
+
+/*CONTATO MAPA*/
+.contato .grid li iframe#maps {
+    width:100%;
+    height:100%;
+    border: none;
+}
+/*CONTATO ONEPAGE FORMULARIO*/
+.contato form {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 70%;
+    max-width: 800px;
+    align-items: center;
+    padding: 100px;
+}
 .contato .grid { 
     background-image:url(bg.png);
     display: flex;
@@ -248,67 +359,68 @@ a.top:hover {
     width: 50%;
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
-/*CONTATO ONEPAGE MAPA*/
-.contato .grid li iframe#maps {
-    width:100%;
-    height:100%;
-    border: none;
-}
-/*CONTATO ONEPAGE FORMULARIO*/
-.contato form.form {
-    padding: 100px 150px;
-}
-.contato form p{color:#ef5f26;
+.contato form p{
+    color:#00aeff;
     font-size:20px;
-    margin-bottom: 20px;
+    padding: 30px;
     font-weight:bold;
+    align-self: baseline;
 }
-.contato input {
+.contato form input {
+    border-radius: 4px;
+    text-align: left;
+    width: 100%;
+    font-size: 1.2rem;
     border:none;
-    height:50px;
-    width: 400px;
-    padding: 5px 0 5px 20px;
-    border-radius:3px;
-    background-color:rgba(0,0,0,.1);
-    color:#242525;
-    font-size: 18px;
+    padding: 20px;
+    background-color:rgba(0,0,0,.7);
+    color:#eee;
+    font-size: 1.5rem;
     margin-bottom: 20px;
 }
-input.tel {
-	width: 200px;
+.contato form input.tel {
+    width: 50%;
+    align-self: baseline;
+    margin-bottom: 25px;
 }
-.contato textarea.textarea {border: none;
-	width: 400px;
-    height: 100px;
-    padding: 5px 0 5px 20px;
-    background-color:rgba(0,0,0,.1);
-}
-form.form fieldset {
+.contato form textarea {
+    padding:20px;
     border: none;
+    border-radius: 4px;
+    margin-bottom: 25px;
+    text-align: left;
+    width: 100%;
+    color:#eee;
+    font-size: 1.5rem;
+    height: 150px;
+    background-color:rgba(0,0,0,.7);
 }
-.contato input#enviar { color:#242525;
+.contato button {
+    padding: 20px;
+    background-color:rgba(0,0,0,.9);
+    color:#00aeff;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 4px;
+    width: 30%;
+    text-align: center;
+    align-self: flex-end;
+    margin: 15px 0;
     font-size:18px;
-    text-align:center;
-    height:50px;
-    width:150px;
-    float:right;
-    padding: 5px;
-    background-color:rgba(0,0,0,.2);
-    margin-top:20px;
-    cursor: pointer;
 }
 textarea:focus, input:focus, select:focus {
     box-shadow: 0 0 0 0;
     border: 0 none;
     outline: 0;
 }
+
 /*FOOTER*/
 footer {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: #242525;
 }
 .rodape {
     display: flex;
