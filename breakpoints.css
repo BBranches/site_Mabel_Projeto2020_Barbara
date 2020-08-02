@@ -14,6 +14,8 @@
 		position: inherit;
 		flex-direction: column;
 	}
+	#nav a {font-size:10px;}
+
 	/*LOGO*/
 	header a.logo img#logo {margin: 25px;}
 	/*REDES SOCIAIS*/
