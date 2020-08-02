@@ -63,6 +63,7 @@
 	.imagens .imgs li {padding: 3%;}
 	.imagens .imgs li.menor, .imagens .imgs li.maior {flex-basis: 100%;}
 
+
 	/*CONTATO ONEPAGE*/
 	.contato .grid {flex-direction: column;}
 	

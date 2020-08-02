@@ -51,7 +51,7 @@ header a.logo img#logo {
 section#sociais ul {
 	list-style-type: none;
     display: flex;	
-    margin: 20px 15px 10px 15px;
+    margin: 15px;
 }
 section#sociais ul li a {
 	font-size: 1.5em;
@@ -60,14 +60,13 @@ section#sociais ul li a {
 }
 /*MENU PRINCIPAL*/
 header nav {
-    margin-bottom: 20px;
     font-family:'menu';
 }
 header nav ul {
     display: flex;
 }
 #nav ul li {
-    padding: 10px;
+    padding-right: 15px;
 }
 #nav a {
     color:#fff;
@@ -386,7 +385,7 @@ a.top {
     background-color:rgba(0,0,0,.7);
 }
 .contato button {
-    padding: 20px;
+    padding: 20px 40px;
     background-color:rgba(0,0,0,.9);
     color:#00aeff;
     text-transform: uppercase;
