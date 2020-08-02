@@ -58,6 +58,7 @@
 
 
 	/*CONTATO ONEPAGE*/
+	.contato form {padding: 20px;}
 	.contato .grid {flex-direction: column;}
 	.contato .grid li {width: 100%;}
 	.contato ul.grid li.map {height: 350px;}
