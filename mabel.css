@@ -25,7 +25,8 @@ nav, ul{list-style: none;}
 /*BODY*/
 body {font-family:'outro';
     overflow-x: hidden;
-    background-image:url(skewed_print.png);}
+    background-image:url(skewed_print.png);
+}
 
 /*HEADER*/
 header#cabecalho {
@@ -33,12 +34,12 @@ header#cabecalho {
     background-image:url(skewed_print.png);
     position: fixed;
     z-index: 200;
+    top: 0;
+    left: 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
-}
-header nav ul {
-    display: flex;
+    
 }
 /*LOGO*/
 header a.logo img#logo {
@@ -50,7 +51,7 @@ header a.logo img#logo {
 section#sociais ul {
 	list-style-type: none;
     display: flex;	
-    margin: 15px;
+    margin: 20px 15px 10px 15px;
 }
 section#sociais ul li a {
 	font-size: 1.5em;
@@ -58,27 +59,15 @@ section#sociais ul li a {
     padding: 8px;
 }
 /*MENU PRINCIPAL*/
-#nav {
-    width:100%;
-    top:0px;
-    height:40px;
-    display: block;
-    margin: auto;
-    margin-top: 10px;
-    text-align: center;
-}
-#nav {
-    width:100%;
-    margin:auto;
-    display: block;
-}
-#nav ul {
+header nav {
+    margin-bottom: 20px;
     font-family:'menu';
-    display:inline-block;
 }
-#nav li {
-	display:inline-block;
-    padding:8px;
+header nav ul {
+    display: flex;
+}
+#nav ul li {
+    padding: 10px;
 }
 #nav a {
     color:#fff;
@@ -88,7 +77,6 @@ section#sociais ul li a {
     padding:3px;
 }
 #nav a:hover {
-    padding:3px;
     color:#00AEFF;
 }
 #nav a.active {color:#00AEFF;}
