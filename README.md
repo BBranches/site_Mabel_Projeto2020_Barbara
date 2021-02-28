@@ -1,19 +1,34 @@
-# [Site Mabel 2020][]
+<h1 align="center">
+  <img width="500px" alt="moveit" src="logo.svg"/>
+</h1>
+<br>
 
-## Redesign site Mabel Administradora
-Esse projeto é um redesign do site Mabel Administradora feito e apresentado no meu TCC em 2014, ainda está em desenvolvimento, principalmente a página de imóveis.
+### Sobre:
+Esse projeto é um redesign do Logotipo e da One page da empresa imobiliária e de serviços jurídicos: **Mabel Administradora**, redesign utilizando CSS Flexible Box Layout.
 
-#### Projeto utilizando CSS Flexible Box Layout
+<br>
 
-[Site Mabel 2020]: https://mabelprojects.github.io/site_Mabel_Projeto2020_Barbara/
+### Deploy:
+[**Mabel Administradora**][site]
 
-### Desenvolvido por Bárbara Ramos
+<br>
+<br>
 
-[LinkedIn][]
+### Contato: :e-mail:
 
-[GitHub][]
+[![Linkedin Badge](https://img.shields.io/badge/-Bárbara_Ramos-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/barbara-ramos-do-nascimento-/)](https://www.linkedin.com/in/barbara-ramos-do-nascimento-/) 
 
-[LinkedIn]: https://www.linkedin.com/in/barbara-ramos-do-nascimento-/
+[![Gmail Badge](https://img.shields.io/badge/-barbwebdev@gmail.com-c14438?style=flat-square&logo=Gmail&logoColor=white&link=mailto:barbwebdev@gmail.com)](mailto:barbwebdev@gmail.com)
 
-[GitHub]: https://github.com/BBranches
+
+<br>
+
+
+Desenvolvido por [Bárbara Ramos][github] 💻
+
+
+[github]:https://github.com/BBranches
+[moveit]:https://moveitdark.vercel.app/
+[site]: https://mabelprojects.github.io/site_Mabel_Projeto2020_Barbara/
+
 
